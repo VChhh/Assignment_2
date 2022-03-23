@@ -23,11 +23,12 @@ public class player_control : MonoBehaviour
     }
 
     private void Update() {
+        
         if(Input.GetMouseButtonDown(0)){
             RaycastHit hit;
             if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out hit, 200)){
                 _navAgent.destination = hit.point;
             }
-        }
+        }   
     }
 }
