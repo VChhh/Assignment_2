@@ -8,6 +8,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/*
 public class ShapeCounter : MonoBehaviour
 {
     public TextMeshProUGUI scoreUI;
@@ -36,3 +37,4 @@ public class ShapeCounter : MonoBehaviour
     }
 
 }
+*/
