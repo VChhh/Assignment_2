@@ -33,7 +33,7 @@ public class grab : MonoBehaviour
         if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200)){
             if(grab_hit.transform.CompareTag("grab") || grab_hit.transform.CompareTag("Item")){
                 // do something
-                PublicVars.score++;
+                // PublicVars.score++;
                 scoreUI.text = "Score: " + PublicVars.score;
                 if(PublicVars.score > 0){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in the cabinet", 3f));
