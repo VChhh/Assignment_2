@@ -35,6 +35,7 @@ public class player_control : MonoBehaviour
         }   
     }
     private void OnCollisionEnter(Collision other) {
+        
         if (other.gameObject.CompareTag("Item"))
         {
             Destroy(other.gameObject);
@@ -51,6 +52,16 @@ public class player_control : MonoBehaviour
             PublicVars.score++;
             scoreUI.text = "Score: " + PublicVars.score;
         }
-        
+        if(other.gameObject.CompareTag("Interactable")){
+            // call every function named "Interact" that are attached on this gameobject
+            other.transform.gameObject.BroadcastMessage("Interact"); 
+        }
+    }
+    private void OnTriggerEnter(Collider other) {
+        print("hi");
+        if (other.gameObject.CompareTag("Interactable"))
+        {
+            print("hi2");
+        }
     }
 }
