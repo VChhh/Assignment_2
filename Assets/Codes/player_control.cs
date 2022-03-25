@@ -45,10 +45,17 @@ public class player_control : MonoBehaviour
             }
             
         }
+
         if(other.gameObject.CompareTag("Key")){
             Destroy(other.gameObject);
             PublicVars.score++;
             scoreUI.text = "Score: " + PublicVars.score;
+        }
+    }
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.CompareTag("Interactable"))
+        {
+            print("hi");
         }
     }
 }
