@@ -53,9 +53,10 @@ public class player_control : MonoBehaviour
         }
     }
     private void OnTriggerEnter(Collider other) {
+        print("hi");
         if (other.gameObject.CompareTag("Interactable"))
         {
-            print("hi");
+            print("hi2");
         }
     }
 }
