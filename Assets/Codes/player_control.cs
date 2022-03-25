@@ -9,6 +9,7 @@ public class player_control : MonoBehaviour
     NavMeshAgent _navAgent;
     public Camera maincam;
     public TextMeshProUGUI scoreUI;
+    public GameObject hint_UI;
 
     private void Start() {
         scoreUI.text = "Score: " + PublicVars.score;
@@ -41,7 +42,9 @@ public class player_control : MonoBehaviour
         scoreUI.text = "Score: " + PublicVars.score;
     }
     private void OnCollisionEnter(Collision other) {
-        
+        if(other.gameObject.CompareTag("Interactable")){
+            hint_UI.SetActive(true);
+        }
         if (other.gameObject.CompareTag("Item"))
         {
             Destroy(other.gameObject);
@@ -60,6 +63,12 @@ public class player_control : MonoBehaviour
         }
     }
 
+
+    private void OnCollisionExit(Collision other) {
+        if(other.gameObject.CompareTag("Interactable")){
+            hint_UI.SetActive(false);
+        }
+    }
     private void OnCollisionStay(Collision other) {
         if(other.gameObject.CompareTag("Interactable")){
             // call every function named "Interact" that are attached on this gameobject
