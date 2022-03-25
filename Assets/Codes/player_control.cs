@@ -51,12 +51,6 @@ public class player_control : MonoBehaviour
             PublicVars.score++;
             scoreUI.text = "Score: " + PublicVars.score;
         }
-    }
-    private void OnTriggerEnter(Collider other) {
-        print("hi");
-        if (other.gameObject.CompareTag("Interactable"))
-        {
-            print("hi2");
-        }
+        
     }
 }

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3508505766439923393}
   - component: {fileID: 3508505766440922113}
   - component: {fileID: 7655572392174559719}
-  - component: {fileID: 5522807784173076612}
   m_Layer: 0
   m_Name: Cabinet_A_snaps004
   m_TagString: Untagged
@@ -102,19 +101,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.665493, y: 2.4535406, z: 2.2630448}
   m_Center: {x: -0.08981884, y: 1.2267705, z: 0.040600717}
---- !u!65 &5522807784173076612
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3508505766442857153}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.3306297, y: 2.4535406, z: 2.2630453}
-  m_Center: {x: -0.42238712, y: 1.2267705, z: 0.040600777}
 --- !u!1001 &421518690284099193
 PrefabInstance:
   m_ObjectHideFlags: 0
