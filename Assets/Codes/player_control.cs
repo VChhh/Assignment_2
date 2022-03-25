@@ -11,6 +11,7 @@ public class player_control : MonoBehaviour
     public TextMeshProUGUI scoreUI;
 
     private void Start() {
+        scoreUI.text = "Score: " + PublicVars.score;
         _navAgent = GetComponent<NavMeshAgent>();
         maincam = Camera.main;
         //StartCoroutine(Go());
@@ -39,6 +40,9 @@ public class player_control : MonoBehaviour
             Destroy(other.gameObject);
             PublicVars.score++;
             scoreUI.text = "Score: " + PublicVars.score;
+            if(PublicVars.score > 0){
+                scoreUI.text = "Score: " + PublicVars.score + "  Hint: The Key is located in location XYZ";
+            }
             
         }
         if(other.gameObject.CompareTag("Key")){
