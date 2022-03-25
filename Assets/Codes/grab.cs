@@ -27,7 +27,7 @@ public class grab : MonoBehaviour
 
     void grab_check(){
         RaycastHit grab_hit;
-        if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200)){
+        if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200, grabbable)){
             StartCoroutine(pick_up(grab_hit.transform));
         }
     }
