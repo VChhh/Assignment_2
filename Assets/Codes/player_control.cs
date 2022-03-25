@@ -31,4 +31,18 @@ public class player_control : MonoBehaviour
             }
         }   
     }
+    private void OnCollisionEnter(Collision other) {
+        if (other.gameObject.CompareTag("Item"))
+        {
+            Destroy(other.gameObject);
+            PublicVars.score++;
+            scoreUI.text = "Score: " + PublicVars.score;
+            
+        }
+        if(other.gameObject.CompareTag("Key")){
+            Destroy(other.gameObject);
+            PublicVars.score++;
+            scoreUI.text = "Score: " + PublicVars.score;
+        }
+    }
 }
