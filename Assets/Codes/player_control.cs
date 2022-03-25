@@ -57,6 +57,8 @@ public class player_control : MonoBehaviour
             other.transform.gameObject.BroadcastMessage("Interact"); 
         }
     }
+
+    /*
     private void OnTriggerEnter(Collider other) {
         print("hi");
         if (other.gameObject.CompareTag("Interactable"))
@@ -64,4 +66,5 @@ public class player_control : MonoBehaviour
             print("hi2");
         }
     }
+    */
 }

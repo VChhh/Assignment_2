@@ -31,12 +31,14 @@ public class grab : MonoBehaviour
             }
             
         }
-        if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200, the_layer)){
-            if(grab_hit.transform.CompareTag("Key")){
-                PublicVars.keys_in_world -- ;
-                PublicVars.keys_on_player ++ ;
-                Destroy(grab_hit.transform.gameObject);
-            }
+        // check only the key layer
+        // destroy the key and update the key num if the key is_collectable
+        if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200, the_layer) 
+            && grab_hit.transform.GetComponent<key>().is_collectable){
+            PublicVars.keys_in_world -- ;
+            PublicVars.keys_on_player ++ ;
+            Destroy(grab_hit.transform.gameObject);
+
             
         }
 

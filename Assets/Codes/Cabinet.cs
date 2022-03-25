@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class Cabinet : MonoBehaviour
 {
     public GameObject interactable_part;
-    private bool is_opended = false;
+    public GameObject key;
+    private bool is_opended = false; // to make sure opening the gate for once
     public void Interact(){
-        print("nice");
+        //print("nice");
         if(!is_opended){
-            interactable_part.transform.Rotate(0,-90,0);
+            interactable_part.transform.Rotate(0,-90,0); // open the cabinet gate
+            key.GetComponent<key>().is_collectable = true;
         }
         is_opended = is_opended | true;
     }

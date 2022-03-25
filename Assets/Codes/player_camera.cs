@@ -7,7 +7,7 @@ public class player_camera : MonoBehaviour
      // Start is called before the first frame update
     GameObject player;
     Vector3 offset;
-    public float rotate_speed = 0.4f;
+    public float rotate_speed = 0.4f; // camera rotation speed
 
     void Start()
     {
@@ -16,8 +16,8 @@ public class player_camera : MonoBehaviour
     }
 
     private void Update() {
+        // rotate the camera with e and q
         if(Input.GetKey("q")){
-
             offset = Quaternion.AngleAxis (-rotate_speed, Vector3.up) * offset;
         }
         if(Input.GetKey("e")){
