@@ -35,7 +35,7 @@ public class grab : MonoBehaviour
                 // do something
                 // PublicVars.score++;
                 scoreUI.text = "Score: " + PublicVars.score;
-                if(PublicVars.score > 0){
+                if(PublicVars.score >= 0){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in the cabinet", 3f));
                 }
             }

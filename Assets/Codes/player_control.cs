@@ -50,7 +50,7 @@ public class player_control : MonoBehaviour
             Destroy(other.gameObject);
             // PublicVars.score++;
             scoreUI.text = "Score: " + PublicVars.score;
-            if(PublicVars.score > 0){
+            if(PublicVars.score >= 0){
                 StartCoroutine(ShowMessage("  Hint: The Key is located in location XYZ", 3f));
             }
             
