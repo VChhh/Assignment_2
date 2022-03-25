@@ -58,6 +58,9 @@ public class player_control : MonoBehaviour
             PublicVars.score++;
             scoreUI.text = "Score: " + PublicVars.score;
         }
+    }
+
+    private void OnCollisionStay(Collision other) {
         if(other.gameObject.CompareTag("Interactable")){
             // call every function named "Interact" that are attached on this gameobject
             other.transform.gameObject.BroadcastMessage("Interact"); 
