@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class grab : MonoBehaviour
 {
     //public Transform holdPoint;
     public Camera maincam;
     private int the_layer;
-
-
+    public TextMeshProUGUI scoreUI;
 
     void Start()
     {
@@ -22,13 +22,22 @@ public class grab : MonoBehaviour
             grab_check();
         }
     }
-
+    
+    IEnumerator ShowMessage(string message, float delay) {
+        scoreUI.text = "Score: " + PublicVars.score + message;
+        yield return new WaitForSeconds(delay);
+        scoreUI.text = "Score: " + PublicVars.score;
+    }
     void grab_check(){
         RaycastHit grab_hit;
         if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200)){
             if(grab_hit.transform.CompareTag("grab") || grab_hit.transform.CompareTag("Item")){
                 // do something
-                print("Grabbed");
+                PublicVars.score++;
+                scoreUI.text = "Score: " + PublicVars.score;
+                if(PublicVars.score > 0){
+                    StartCoroutine(ShowMessage("  Hint: The Key is located in the cabinet", 3f));
+                }
             }
             
         }
@@ -39,8 +48,6 @@ public class grab : MonoBehaviour
             PublicVars.keys_in_world -- ;
             PublicVars.keys_on_player ++ ;
             Destroy(grab_hit.transform.gameObject);
-
-            
         }
 
         

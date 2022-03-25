@@ -34,6 +34,12 @@ public class player_control : MonoBehaviour
             }
         }   
     }
+
+    IEnumerator ShowMessage(string message, float delay) {
+        scoreUI.text = "Score: " + PublicVars.score + message;
+        yield return new WaitForSeconds(delay);
+        scoreUI.text = "Score: " + PublicVars.score;
+    }
     private void OnCollisionEnter(Collision other) {
         
         if (other.gameObject.CompareTag("Item"))
@@ -42,7 +48,7 @@ public class player_control : MonoBehaviour
             PublicVars.score++;
             scoreUI.text = "Score: " + PublicVars.score;
             if(PublicVars.score > 0){
-                scoreUI.text = "Score: " + PublicVars.score + "  Hint: The Key is located in location XYZ";
+                StartCoroutine(ShowMessage("  Hint: The Key is located in location XYZ", 3f));
             }
             
         }
@@ -58,13 +64,4 @@ public class player_control : MonoBehaviour
         }
     }
 
-    /*
-    private void OnTriggerEnter(Collider other) {
-        print("hi");
-        if (other.gameObject.CompareTag("Interactable"))
-        {
-            print("hi2");
-        }
-    }
-    */
 }
