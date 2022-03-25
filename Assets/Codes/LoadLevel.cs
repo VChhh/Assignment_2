@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel : MonoBehaviour
 {
-    public string levelToLoad = "Level1";
+    public string levelToLoad = "Level 1";
     public int num_of_keys_required = 1; // keys num required to open the door
 
     private void OnCollisionEnter(Collision other) 

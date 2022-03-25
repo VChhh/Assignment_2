@@ -3327,7 +3327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d6a9213b77d1740962febdd04b1a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Level1
+  levelToLoad: Level_1
   num_of_keys_required: 1
 --- !u!1001 &1755258252
 PrefabInstance:
