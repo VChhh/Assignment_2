@@ -2620,6 +2620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maincam: {fileID: 963194227}
+  scoreUI: {fileID: 539755036}
 --- !u!1 &1562754818
 GameObject:
   m_ObjectHideFlags: 0
