@@ -12,19 +12,10 @@ public class grab : MonoBehaviour
     
     public TextMeshProUGUI scoreUI;
 
-    public Material yellow;
-    public Material blue;
-    public Material red;
-    private Material[] colors = new Material[3];
-
-
     void Start()
     {
         maincam = Camera.main;
         the_layer = LayerMask.GetMask("key");
-        colors[0] = yellow;
-        colors[1] = blue;
-        colors[2] = red;
     }
 
     void Update()
