@@ -10,6 +10,8 @@ TagManager:
   - grab
   - Button
   - Jigsaw
+  - Manager
+  - door
   layers:
   - Default
   - TransparentFX
