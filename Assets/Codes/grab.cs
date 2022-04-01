@@ -8,12 +8,24 @@ public class grab : MonoBehaviour
     //public Transform holdPoint;
     public Camera maincam;
     private int the_layer;
+
+    private int button_layer;
     public TextMeshProUGUI scoreUI;
+
+    public Material yellow;
+    public Material blue;
+    public Material red;
+    private Material[] colors = new Material[3];
+
 
     void Start()
     {
         maincam = Camera.main;
         the_layer = LayerMask.GetMask("key");
+        button_layer = LayerMask.GetMask("button");
+        colors[0] = yellow;
+        colors[1] = blue;
+        colors[2] = red;
     }
 
     void Update()
@@ -38,9 +50,18 @@ public class grab : MonoBehaviour
                 if(PublicVars.score >= 0){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in the cabinet", 3f));
                 }
-            }
+            }            
+        }
+        // check if on button layer
+        if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200, button_layer))
+        {
+            if(grab_hit.transform.CompareTag("Button")){
+                // change button color
+                grab_hit.transform.GetComponent<Renderer>().material = colors[Random.Range(0, colors.Length)];
+            }            
             
         }
+ 
         // check only the key layer
         // destroy the key and update the key num if the key is_collectable
         if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200, the_layer) 
