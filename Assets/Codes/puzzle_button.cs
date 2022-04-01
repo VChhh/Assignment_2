@@ -18,6 +18,8 @@ public class puzzle_button : MonoBehaviour
 
             index = (index + 1) % 3;
 
+            soundManagerScript.playSound("clickButton");
+
             _rd.material= _materials[index];
         }
     }
