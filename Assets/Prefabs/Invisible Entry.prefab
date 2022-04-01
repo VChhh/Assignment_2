@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 193852962643097962}
   - component: {fileID: 3688131551109875586}
   - component: {fileID: 4788752952232862251}
+  - component: {fileID: 8352738843071030281}
+  - component: {fileID: 4854192446490745510}
   m_Layer: 0
   m_Name: Invisible Entry
   m_TagString: Interactable
@@ -95,3 +97,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: Level_1
+--- !u!54 &8352738843071030281
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032683936742625474}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4854192446490745510
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032683936742625474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.526627, y: 1, z: 1}
+  m_Center: {x: 2.003107, y: 0, z: 0}
