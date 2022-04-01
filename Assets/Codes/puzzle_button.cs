@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class puzzle_button : MonoBehaviour
 {
-    private int index;
+    public int index;
     private Renderer _rd;
     public Material[] _materials = new Material[3];
     bool is_in = false;
     private void Start() {
         _rd = GetComponent<Renderer>();
         _materials = GameObject.FindGameObjectWithTag("Manager").GetComponent<puzzle_manager>().materials;
-        for(int i = 0; i < 3; i++){
-            if(_materials[i] == _rd.material){
-                index = i;
-                break;
-            }
-        }
+        //_rd.material = _materials[index];
     }
     private void Update() {
         if(is_in && Input.GetKeyDown("f")){
