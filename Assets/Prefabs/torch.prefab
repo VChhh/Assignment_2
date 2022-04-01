@@ -5021,6 +5021,7 @@ GameObject:
   - component: {fileID: 738110612482858028}
   - component: {fileID: 2800220854960427550}
   - component: {fileID: 7609247564511264021}
+  - component: {fileID: 452894447983173043}
   m_Layer: 0
   m_Name: torch
   m_TagString: Untagged
@@ -5074,3 +5075,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &452894447983173043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7939501985330422233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd681082d7bb4940a88d2f38adfb437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
