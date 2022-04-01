@@ -27,7 +27,7 @@ public class puzzle_manager : MonoBehaviour
     {
         if(button_to_blue.GetComponent<puzzle_button>().index == 2 &&
             button_to_yellow.GetComponent<puzzle_button>().index == 1 &&
-            button_to_red.GetComponent<puzzle_button>().index == 0 ){
+            button_to_red.GetComponent<puzzle_button>().index == 0 && !ready_to_go){
                 // do something
                 print("matched");
                 key.SetActive(true);

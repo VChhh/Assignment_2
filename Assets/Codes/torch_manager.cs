@@ -18,7 +18,7 @@ public class torch_manager : MonoBehaviour
 
     private void Update() {
         print(check_correctness(num_on));
-        if(num_on!= 0 && check_correctness(num_on)){
+        if(!ready_to_go && num_on!= 0 && check_correctness(num_on)){
             if(num_on == 5){
                 // complete
                 print("nice");
@@ -28,7 +28,7 @@ public class torch_manager : MonoBehaviour
             }
         }
         else{
-            reset();
+            if(!ready_to_go) reset();
         }
         if(ready_to_go){
             gate.SetActive(true);
