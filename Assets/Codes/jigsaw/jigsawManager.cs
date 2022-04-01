@@ -14,6 +14,7 @@ public class jigsawManager : MonoBehaviour
     private bool ready_to_go = false;
     public GameObject gate;
 
+
     void Start()
     {
         win = false;
@@ -25,7 +26,7 @@ public class jigsawManager : MonoBehaviour
 
     void Update()
     {
-        if (Mathf.Abs(pieces[0].rotation.y) == 1 && Mathf.Abs(pieces[1].rotation.y) == 1 && 
+        if (!ready_to_go && Mathf.Abs(pieces[0].rotation.y) == 1 && Mathf.Abs(pieces[1].rotation.y) == 1 && 
         Mathf.Abs(pieces[2].rotation.y) == 1 && Mathf.Abs(pieces[3].rotation.y) == 1) 
         {
             win = true;
