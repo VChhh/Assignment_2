@@ -12,6 +12,7 @@ public class rotateJigsawPiece : MonoBehaviour
         maincam = Camera.main;
         if(Input.GetMouseButtonDown(1)){
             if (!jigsawManager.win) {
+                soundManagerScript.playSound();
                 rotate();
             }
         }
