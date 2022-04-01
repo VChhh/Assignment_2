@@ -5,11 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    public string levelToLoad = "Level_1";
+    public string levelToLoad = "house";
     
     public void Interact(){
-        if(Input.GetKey("f")) {
-            SceneManager.LoadScene(levelToLoad);
-        }
+        SceneManager.LoadScene(levelToLoad);
     }
 }
