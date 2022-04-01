@@ -71,6 +71,7 @@ public class player_control : MonoBehaviour
     }
     private void OnCollisionStay(Collision other) {
         if(other.gameObject.CompareTag("Interactable")){
+            print("in");
             // call every function named "Interact" that are attached on this gameobject
             other.transform.gameObject.BroadcastMessage("Interact"); 
         }

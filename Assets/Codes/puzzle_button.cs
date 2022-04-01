@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class puzzle_button : MonoBehaviour
 {
-    private Color[] colors = new Color[3]{PublicVars.my_red, PublicVars.my_blue, PublicVars.my_yellow};
     private int index;
     private Renderer _rd;
+    public Material[] _materials = new Material[3];
+    bool is_in = false;
     private void Start() {
         _rd = GetComponent<Renderer>();
+        _materials = GameObject.FindGameObjectWithTag("Manager").GetComponent<puzzle_manager>().materials;
         for(int i = 0; i < 3; i++){
-            if(colors[i] == _rd.material.color){
+            if(_materials[i] == _rd.material){
                 index = i;
                 break;
             }
         }
     }
-    public void Interact(){
-        if(Input.GetKeyDown("f")){
-            index = (index++) % 3;
-            _rd.material.color = colors[index];
+    private void Update() {
+        if(is_in && Input.GetKeyDown("f")){
+
+            index = (index + 1) % 3;
+
+            _rd.material= _materials[index];
+        }
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        if(other.transform.CompareTag("Player")){
+            is_in = true;
+        }
+    }
+    private void OnCollisionExit(Collision other) {
+        if(other.transform.CompareTag("Player")){
+            is_in = false;
         }
     }
 }
