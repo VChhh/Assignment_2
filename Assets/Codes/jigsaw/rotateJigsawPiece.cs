@@ -5,6 +5,8 @@ using UnityEngine;
 public class rotateJigsawPiece : MonoBehaviour
 {
     public Camera maincam;
+
+
     void Update()
     {
         maincam = Camera.main;
