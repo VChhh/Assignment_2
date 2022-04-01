@@ -10,6 +10,9 @@ public class jigsawManager : MonoBehaviour
     public Transform three;
     public Transform four;
     public static bool win;
+    public GameObject key;
+    private bool ready_to_go = false;
+    public GameObject gate;
 
     void Start()
     {
@@ -26,7 +29,12 @@ public class jigsawManager : MonoBehaviour
         Mathf.Abs(pieces[2].rotation.y) == 1 && Mathf.Abs(pieces[3].rotation.y) == 1) 
         {
             win = true;
-            print(true);
+            key.SetActive(true);
+            key.GetComponent<key>().is_collectable = true;
+            ready_to_go = true;
+        }
+        if (ready_to_go){
+            gate.SetActive(true);
         }
     }
 }
