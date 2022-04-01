@@ -9,6 +9,7 @@ TagManager:
   - Key
   - grab
   - Button
+  - Jigsaw
   layers:
   - Default
   - TransparentFX
