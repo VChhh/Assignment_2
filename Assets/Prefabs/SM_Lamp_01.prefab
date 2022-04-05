@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 4612925309704640890}
   - component: {fileID: 8623193400232220383}
   - component: {fileID: 5786927593244942869}
+  - component: {fileID: 8120577399543418906}
   m_Layer: 0
   m_Name: SM_Lamp_01
   m_TagString: Untagged
@@ -175,3 +176,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8120577399543418906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426757889654703040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a4484a0774f44f7b75c468688abcac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  houseNumber: 0
