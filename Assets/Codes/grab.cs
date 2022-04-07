@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class grab : MonoBehaviour
 {
@@ -26,9 +27,9 @@ public class grab : MonoBehaviour
     }
     
     IEnumerator ShowMessage(string message, float delay) {
-        scoreUI.text = "Score: " + PublicVars.score + message;
+        scoreUI.text = "Hints Collected: " + PublicVars.score + message;
         yield return new WaitForSeconds(delay);
-        scoreUI.text = "Score: " + PublicVars.score;
+        scoreUI.text = "Hints Collected: " + PublicVars.score;
     }
     void grab_check(){
         RaycastHit grab_hit;
@@ -37,8 +38,16 @@ public class grab : MonoBehaviour
                 // do something
                 // PublicVars.score++;
                 scoreUI.text = "Score: " + PublicVars.score;
+                /*
                 if(PublicVars.score >= 0){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in the cabinet", 3f));
+                }
+                */
+                if(SceneManager.GetActiveScene().name == "house"){
+                    StartCoroutine(ShowMessage("  Hint: The Key is located in one of the boxes", 3f));
+                }
+                if(SceneManager.GetActiveScene().name == "test_scene"){
+                    StartCoroutine(ShowMessage("  Hint: The Key is located in cabinet", 3f));
                 }
             }            
         }
