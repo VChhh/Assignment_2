@@ -6,11 +6,12 @@ public class houseMang : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject gate;
-
+    public LampLights sn;
     private bool readyToGo = false;
     void Start()
     {
         PublicVars.keys_in_world = 1;
+        sn = gameObject.GetComponent<LampLights>();
 
     }
 
@@ -24,6 +25,7 @@ public class houseMang : MonoBehaviour
 
         if(readyToGo){
             gate.SetActive(true);
+            sn.TurnOn();
         }
     }
 }
