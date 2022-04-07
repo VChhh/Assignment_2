@@ -12,6 +12,7 @@ TagManager:
   - Jigsaw
   - Manager
   - door
+  - Ground
   layers:
   - Default
   - TransparentFX
