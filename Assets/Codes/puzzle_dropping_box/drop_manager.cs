@@ -8,7 +8,7 @@ public class drop_manager : MonoBehaviour
     public GameObject drop_box;
     public GameObject player;
     public static int box_dropped = 0;
-    public float difficulty_const = 5;
+    public float difficulty_const = 4;
     public GameObject key;
     public GameObject gate;
     public GameObject clue;

@@ -60,7 +60,7 @@ public class grab : MonoBehaviour
                     StartCoroutine(ShowMessage("  Hint: Dodge 1,2,3,4,5!", 3f));
                 }
                 else if(SceneManager.GetActiveScene().name == "puzzle4"){
-                    StartCoroutine(ShowMessage("  Hint: Escape", 3f));
+                    StartCoroutine(ShowMessage("  Hint: 0/2 keys", 3f));
                 }
                 else if(SceneManager.GetActiveScene().name == "puzzle5"){
                     StartCoroutine(ShowMessage("  Hint: Buttons change themself and their neighbors...", 3f));
