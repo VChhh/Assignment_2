@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -187,9 +187,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: puzzle2
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry
+      value: Invisible Entry 2
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder
@@ -415,9 +419,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: puzzle6
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry (5)
+      value: Invisible Entry 6
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder
@@ -683,9 +691,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: puzzle
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry (1)
+      value: Invisible Entry 1
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder
@@ -740,9 +752,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: house
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry (7)
+      value: Invisible Entry 8
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder
@@ -1538,9 +1554,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: puzzle5
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry (4)
+      value: Invisible Entry 5
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder
@@ -2073,7 +2093,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.02
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2146,7 +2166,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry (8)
+      value: Invisible Entry 9
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder
@@ -2270,9 +2290,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: puzzle_torch
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry (6)
+      value: Invisible Entry 7
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder
@@ -2693,9 +2717,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: puzzle3
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry (2)
+      value: Invisible Entry 3
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder
@@ -2864,9 +2892,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: puzzle4
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
-      value: Invisible Entry (3)
+      value: Invisible Entry 4
       objectReference: {fileID: 0}
     - target: {fileID: 5133146755178997949, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_RootOrder

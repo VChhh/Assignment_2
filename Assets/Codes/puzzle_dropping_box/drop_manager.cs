@@ -12,7 +12,7 @@ public class drop_manager : MonoBehaviour
     public GameObject key;
     public GameObject gate;
     public GameObject clue;
-    private bool ready_to_go = false;
+    // private bool ready_to_go = false;
     public TextMeshProUGUI scoreUI;
     Vector3 initial_pos;
     Rigidbody db_rb;
@@ -26,8 +26,8 @@ public class drop_manager : MonoBehaviour
     private void Update() {
         if(box_dropped > 5){
             PublicVars.score += 1;
-            scoreUI.text = "Clues: " + PublicVars.score + "/10";
-            ready_to_go = true;
+            scoreUI.text = "Clues: " + PublicVars.score + "/8";
+            // ready_to_go = true;
             complete();
         }
     }

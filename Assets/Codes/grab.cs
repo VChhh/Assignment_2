@@ -27,9 +27,9 @@ public class grab : MonoBehaviour
     }
     
     IEnumerator ShowMessage(string message, float delay) {
-        scoreUI.text = "Clues: " + PublicVars.score + "/10" + message;
+        scoreUI.text = "Clues: " + PublicVars.score + "/8" + message;
         yield return new WaitForSeconds(delay);
-        scoreUI.text = "Clues: " + PublicVars.score + "/10";
+        scoreUI.text = "Clues: " + PublicVars.score + "/8";
     }
     void grab_check(){
         RaycastHit grab_hit;
@@ -37,7 +37,7 @@ public class grab : MonoBehaviour
             if(grab_hit.transform.CompareTag("grab") || grab_hit.transform.CompareTag("Item")){
                 // do something
                 // PublicVars.score++;
-                scoreUI.text = "Clues: " + PublicVars.score + "/10";
+                scoreUI.text = "Clues: " + PublicVars.score + "/8";
                 /*
                 if(PublicVars.score >= 0){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in the cabinet", 3f));
