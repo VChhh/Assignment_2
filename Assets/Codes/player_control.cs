@@ -12,7 +12,7 @@ public class player_control : MonoBehaviour
     public GameObject hint_UI;
 
     private void Start() {
-        scoreUI.text = "Score: " + PublicVars.score;
+        scoreUI.text = "Clues: " + PublicVars.score;
         _navAgent = GetComponent<NavMeshAgent>();
         maincam = Camera.main;
         //StartCoroutine(Go());
