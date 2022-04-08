@@ -6173,8 +6173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 69832444}
-  key: {fileID: 0}
-  scoreUI: {fileID: 0}
+  key: {fileID: 870058138}
+  scoreUI: {fileID: 1398497449}
 --- !u!1001 &2085553159
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class houseMang : MonoBehaviour
     void Start()
     {
         PublicVars.keys_in_world = 1;
+        key.GetComponent<key>().is_collectable = true;
 
     }
 
