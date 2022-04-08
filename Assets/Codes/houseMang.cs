@@ -11,6 +11,8 @@ public class houseMang : MonoBehaviour
 
     public GameObject key;
 
+    public GameObject clue;
+
     public TextMeshProUGUI scoreUI;
     void Start()
     {
@@ -30,6 +32,7 @@ public class houseMang : MonoBehaviour
 
         if(readyToGo){
             gate.SetActive(true);
+            clue.SetActive(true);
         }
     }
 }
