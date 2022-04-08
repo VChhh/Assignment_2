@@ -25,6 +25,7 @@ public class jigsawManager : MonoBehaviour
         pieces[1] = two;
         pieces[2] = three;
         pieces[3] = four;
+        PublicVars.keys_in_world = 1;
     }
 
     void Update()
