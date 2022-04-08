@@ -31,6 +31,7 @@ public class grab : MonoBehaviour
         yield return new WaitForSeconds(delay);
         scoreUI.text = "Clues: " + PublicVars.score + "/10";
     }
+    
     void grab_check(){
         RaycastHit grab_hit;
         if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200)){

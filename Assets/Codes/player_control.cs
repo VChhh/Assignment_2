@@ -46,10 +46,6 @@ public class player_control : MonoBehaviour
             Destroy(other.gameObject);
             // PublicVars.score++;
             scoreUI.text = "Clues: " + PublicVars.score + "/10";
-            if(PublicVars.score >= 0){
-                StartCoroutine(ShowMessage("  Hint: The Key is located in location XYZ", 3f));
-            }
-            
         }
 
         if(other.gameObject.CompareTag("Key")){

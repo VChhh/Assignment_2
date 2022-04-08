@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
     public string levelToLoad = "house";
+    public int houseNumber = 0;
+
     public void Interact(){
-        SceneManager.LoadScene(levelToLoad);
+        if(PublicVars.houses_completed[houseNumber] == false && Input.GetKey("f")){
+            SceneManager.LoadScene(levelToLoad);
+        }
     }
 }

@@ -5,11 +5,11 @@ using UnityEngine;
 public class player_camera : MonoBehaviour
 {
      // Start is called before the first frame update
-    private float vertical_speed = .1f;
+    private float vertical_speed = .4f;
     GameObject player;
     Vector3 offset;
     float vertical_offset = 0f;
-    public float rotate_speed = 0.4f; // camera rotation speed
+    public float rotate_speed = .8f; // camera rotation speed
 
     void Start()
     {
