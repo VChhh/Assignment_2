@@ -188,6 +188,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: houseNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
       value: puzzle
       objectReference: {fileID: 0}
@@ -419,6 +423,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: houseNumber
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
       value: puzzle5
@@ -751,6 +759,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: houseNumber
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
       value: puzzle_torch
@@ -1562,6 +1574,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: houseNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
       value: puzzle4
       objectReference: {fileID: 0}
@@ -2180,6 +2196,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: houseNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
       value: house
       objectReference: {fileID: 0}
@@ -2309,6 +2329,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: houseNumber
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
       value: puzzle6
@@ -2737,6 +2761,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: houseNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
       value: puzzle2
       objectReference: {fileID: 0}
@@ -2911,6 +2939,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: houseNumber
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
       value: puzzle3

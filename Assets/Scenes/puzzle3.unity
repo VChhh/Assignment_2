@@ -433,6 +433,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8734790031205963913, guid: 3b9f35a5db6e31c42ba10d8c251b1e45, type: 3}
+      propertyPath: houseNumber
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b9f35a5db6e31c42ba10d8c251b1e45, type: 3}
 --- !u!1 &705507993
@@ -729,7 +733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19776257ddc07c4abc0d9b9539ee0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotate_speed: 0.4
 --- !u!114 &972687472 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3180304018137042872, guid: 6495c8606becf441eab496c6b1486722, type: 3}
