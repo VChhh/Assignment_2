@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/puzzle_torch.unity
     guid: f7d42a41369fcc24cbc0c737b5993e22
+  - enabled: 1
+    path: Assets/Scenes/endscene.unity
+    guid: 146725a7de3ac4157a41798ad3a4c961
   m_configObjects: {}
