@@ -37,7 +37,7 @@ public class puzzle_manager : MonoBehaviour
                 key.GetComponent<key>().is_collectable = true;
                 ready_to_go = true;
                 PublicVars.score += 1;
-                scoreUI.text = "Clues: " + PublicVars.score + "/10";
+                scoreUI.text = "Clues: " + PublicVars.score + "/8";
                 // PublicVars.houses_completed[houseNumber] = true;
         }
         if(ready_to_go){
