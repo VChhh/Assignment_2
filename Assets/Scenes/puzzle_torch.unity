@@ -344,6 +344,7 @@ MonoBehaviour:
   levelToLoad: Level_1
   num_of_keys_required: 1
   num_key_in_world_left: 0
+  houseNumber: 7
 --- !u!54 &491566699
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -489,6 +490,8 @@ MonoBehaviour:
   - {fileID: 1297372898}
   key: {fileID: 1208165963}
   gate: {fileID: 491566697}
+  clue: {fileID: 0}
+  scoreUI: {fileID: 0}
 --- !u!1 &689563838 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7939501985330422233, guid: d5c8964079360fd48b64c12a36be04dd, type: 3}
@@ -711,7 +714,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19776257ddc07c4abc0d9b9539ee0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotate_speed: 0.4
 --- !u!1001 &1097258513
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427147, b: 0.56452364, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.5645241, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -781,6 +781,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8734790031205963913, guid: 3b9f35a5db6e31c42ba10d8c251b1e45, type: 3}
+      propertyPath: houseNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734790031205963913, guid: 3b9f35a5db6e31c42ba10d8c251b1e45, type: 3}
       propertyPath: num_of_keys_required
       value: 2
       objectReference: {fileID: 0}
@@ -1432,7 +1436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19776257ddc07c4abc0d9b9539ee0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotate_speed: 0.4
 --- !u!1 &973339869
 GameObject:
   m_ObjectHideFlags: 0
