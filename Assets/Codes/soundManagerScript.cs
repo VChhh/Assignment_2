@@ -6,11 +6,13 @@ public class soundManagerScript : MonoBehaviour
 {
     public static AudioClip rotateSound;
     public static AudioClip clickButton;
+    public static AudioClip cabinetOpen;
     static AudioSource audioSrc;
     void Start()
     {
         rotateSound = Resources.Load<AudioClip> ("rotateSound");
         clickButton = Resources.Load<AudioClip> ("clickButton");
+        cabinetOpen = Resources.Load<AudioClip> ("cabinetOpen");
         audioSrc = GetComponent<AudioSource> ();
     }
 
@@ -20,6 +22,9 @@ public class soundManagerScript : MonoBehaviour
         }
         else if (clip == "clickButton") {
             audioSrc.PlayOneShot(clickButton);
+        }
+        else if (clip == "cabinetOpen") {
+            audioSrc.PlayOneShot(cabinetOpen);
         }
     }
 }
