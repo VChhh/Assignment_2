@@ -6046,6 +6046,10 @@ PrefabInstance:
       propertyPath: houseNumber
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8734790031205963913, guid: 3b9f35a5db6e31c42ba10d8c251b1e45, type: 3}
+      propertyPath: levelToLoad
+      value: endscene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b9f35a5db6e31c42ba10d8c251b1e45, type: 3}
 --- !u!1001 &2046257307
