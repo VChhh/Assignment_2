@@ -16,6 +16,7 @@ public class drop_manager : MonoBehaviour
         box_dropped = 0;
         initial_pos = drop_box.transform.position;
         db_rb = drop_box.GetComponent<Rigidbody>();
+        PublicVars.keys_in_world = 1;
     }
 
     private void Update() {

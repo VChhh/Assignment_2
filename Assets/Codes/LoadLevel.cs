@@ -12,7 +12,7 @@ public class LoadLevel : MonoBehaviour
     private void OnCollisionEnter(Collision other) 
     {
         if (other.gameObject.CompareTag("Player") && 
-            (num_of_keys_required == PublicVars.keys_on_player || PublicVars.keys_in_world == num_key_in_world_left)) 
+            (PublicVars.keys_in_world == num_key_in_world_left)) 
         {
             SceneManager.LoadScene(levelToLoad);
         }
