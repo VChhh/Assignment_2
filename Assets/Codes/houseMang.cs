@@ -11,10 +11,13 @@ public class houseMang : MonoBehaviour
 
     public GameObject key;
 
+    public GameObject clue;
+
     public TextMeshProUGUI scoreUI;
     void Start()
     {
         PublicVars.keys_in_world = 1;
+        key.GetComponent<key>().is_collectable = true;
 
     }
 
@@ -30,6 +33,7 @@ public class houseMang : MonoBehaviour
 
         if(readyToGo){
             gate.SetActive(true);
+            clue.SetActive(true);
         }
     }
 }
