@@ -9,7 +9,7 @@ public class Door : MonoBehaviour
     public int houseNumber = 0;
 
     public void Interact(){
-        if(PublicVars.houses_completed[houseNumber] == false && Input.GetKey("f")){
+        if(PublicVars.houses_completed[houseNumber] == false){
             SceneManager.LoadScene(levelToLoad);
         }
     }
