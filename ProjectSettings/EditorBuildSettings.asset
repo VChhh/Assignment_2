@@ -15,17 +15,29 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_1.unity
     guid: 9d3ad122aba39495786071a45c4b1861
   - enabled: 1
-    path: Assets/Scenes/house.unity
-    guid: e2051e4c0cf43484dbfb0ef5d949851f
+    path: Assets/Scenes/puzzle.unity
+    guid: f21c5feed16dfab479d600c3f7a14170
   - enabled: 1
     path: Assets/Scenes/puzzle2.unity
     guid: 11dedcc939028b141b27dd7bf66cde51
   - enabled: 1
-    path: Assets/Scenes/puzzle.unity
-    guid: f21c5feed16dfab479d600c3f7a14170
+    path: Assets/Scenes/puzzle3.unity
+    guid: 2b8189aad851e8245a848037fd502a14
+  - enabled: 1
+    path: Assets/Scenes/puzzle4.unity
+    guid: 7d1e5ce14b9930b4abe54e069a7e2fbc
+  - enabled: 1
+    path: Assets/Scenes/puzzle5.unity
+    guid: 69fd4164048918a47876f1ca3a8583b9
+  - enabled: 1
+    path: Assets/Scenes/puzzle6.unity
+    guid: 6b86547da9bff474f8aff0f41f595743
   - enabled: 1
     path: Assets/Scenes/puzzle_torch.unity
     guid: f7d42a41369fcc24cbc0c737b5993e22
+  - enabled: 1
+    path: Assets/Scenes/house.unity
+    guid: e2051e4c0cf43484dbfb0ef5d949851f
   - enabled: 1
     path: Assets/Scenes/endscene.unity
     guid: 146725a7de3ac4157a41798ad3a4c961
