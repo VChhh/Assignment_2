@@ -14,7 +14,8 @@ public class LampLights : MonoBehaviour
         } else 
         { 
             this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            print("house " + houseNumber + " is not");
         }
     }
-    
+
 }
