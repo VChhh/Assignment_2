@@ -32,6 +32,7 @@ public class player_control : MonoBehaviour
             }
         }
         if(Input.GetButtonDown("Cancel")){
+            PublicVars.scene = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene("title");
         }   
     }
