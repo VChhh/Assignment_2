@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     public int houseNumber = 0;
 
     public void Interact(){
+        print(PublicVars.house_index);
         if(PublicVars.houses_completed[houseNumber] == false && PublicVars.house_index == houseNumber){
             SceneManager.LoadScene(levelToLoad);
         }

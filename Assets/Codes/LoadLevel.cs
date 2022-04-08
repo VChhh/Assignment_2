@@ -18,7 +18,7 @@ public class LoadLevel : MonoBehaviour
         {
             SceneManager.LoadScene(levelToLoad);
             PublicVars.houses_completed[houseNumber] = true;
-            PublicVars.house_index += 1;
+            PublicVars.house_index = houseNumber + 1;
         }
     }
 }
