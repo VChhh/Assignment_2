@@ -189,7 +189,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
-      value: puzzle2
+      value: puzzle
       objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
@@ -421,7 +421,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
-      value: puzzle6
+      value: puzzle5
       objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
@@ -547,7 +547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19776257ddc07c4abc0d9b9539ee0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotate_speed: 0.4
 --- !u!81 &227756749
 AudioListener:
   m_ObjectHideFlags: 0
@@ -693,7 +692,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
-      value: puzzle
+      value: test_scene
       objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
@@ -754,7 +753,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
-      value: house
+      value: puzzle_torch
       objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
@@ -1556,7 +1555,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
-      value: puzzle5
+      value: puzzle4
       objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
@@ -2164,6 +2163,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
+      propertyPath: levelToLoad
+      value: house
+      objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
       value: Invisible Entry 9
@@ -2292,7 +2295,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
-      value: puzzle_torch
+      value: puzzle6
       objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
@@ -2719,7 +2722,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
-      value: puzzle3
+      value: puzzle2
       objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
@@ -2894,7 +2897,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788752952232862251, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: levelToLoad
-      value: puzzle4
+      value: puzzle3
       objectReference: {fileID: 0}
     - target: {fileID: 5032683936742625474, guid: cfd53a69d6bed4961bbe467adc72f28b, type: 3}
       propertyPath: m_Name
