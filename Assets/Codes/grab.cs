@@ -55,6 +55,18 @@ public class grab : MonoBehaviour
                 else if(SceneManager.GetActiveScene().name == "puzzle2"){
                     StartCoroutine(ShowMessage("  Hint: Rotate...rotate...", 3f));
                 }
+                else if(SceneManager.GetActiveScene().name == "puzzle3"){
+                    StartCoroutine(ShowMessage("  Hint: Dodge 1,2,3,4,5!", 3f));
+                }
+                else if(SceneManager.GetActiveScene().name == "puzzle4"){
+                    StartCoroutine(ShowMessage("  Hint: Rotate...rotate...", 3f));
+                }
+                else if(SceneManager.GetActiveScene().name == "puzzle5"){
+                    StartCoroutine(ShowMessage("  Hint: Rotate...rotate...", 3f));
+                }
+                else if(SceneManager.GetActiveScene().name == "torch"){
+                    StartCoroutine(ShowMessage("  Hint: Rotate...rotate...", 3f));
+                }
             }            
         }
         

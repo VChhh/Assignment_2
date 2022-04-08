@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class drop_manager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class drop_manager : MonoBehaviour
     public float difficulty_const = 5;
     public GameObject key;
     public GameObject gate;
+    public GameObject clue;
+    private bool ready_to_go = false;
+    public TextMeshProUGUI scoreUI;
     Vector3 initial_pos;
     Rigidbody db_rb;
     private void Start() {
@@ -21,6 +25,9 @@ public class drop_manager : MonoBehaviour
 
     private void Update() {
         if(box_dropped > 5){
+            PublicVars.score += 1;
+            scoreUI.text = "Clues: " + PublicVars.score + "/10";
+            ready_to_go = true;
             complete();
         }
     }
@@ -46,6 +53,7 @@ public class drop_manager : MonoBehaviour
         key.SetActive(true);
         key.GetComponent<key>().is_collectable = true;
         gate.SetActive(true);
+        clue.SetActive(true);
         Destroy(drop_box);
     }
 }
