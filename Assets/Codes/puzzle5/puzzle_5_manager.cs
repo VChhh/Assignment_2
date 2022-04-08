@@ -33,7 +33,7 @@ public class puzzle_5_manager : MonoBehaviour
                 key.GetComponent<key>().is_collectable = true;
                 ready_to_go = true;
                 PublicVars.score += 1;
-                scoreUI.text = "Clues: " + PublicVars.score + "/10";
+                scoreUI.text = "Clues: " + PublicVars.score + "/8";
         }
         if(ready_to_go){
             gate.SetActive(true);

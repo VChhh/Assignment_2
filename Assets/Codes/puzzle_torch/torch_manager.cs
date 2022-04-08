@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class torch_manager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class torch_manager : MonoBehaviour
     private int num_on_prev;
     public GameObject key;
     public GameObject gate;
+
+    public GameObject clue;
+    public TextMeshProUGUI scoreUI;
     private bool ready_to_go = false;
     private void Start() {
         num_on = 0;
@@ -25,6 +29,8 @@ public class torch_manager : MonoBehaviour
                 key.SetActive(true);
                 key.GetComponent<key>().is_collectable = true;
                 ready_to_go = true;
+                PublicVars.score += 1;
+                scoreUI.text = "Clues: " + PublicVars.score + "/8";
             }
         }
         else{
@@ -32,6 +38,7 @@ public class torch_manager : MonoBehaviour
         }
         if(ready_to_go){
             gate.SetActive(true);
+            clue.SetActive(true);
         }
     }
 
