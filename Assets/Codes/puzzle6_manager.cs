@@ -15,6 +15,7 @@ public class puzzle6_manager : MonoBehaviour
     public GameObject key;
     public GameObject gate;
 
+    private bool ready_to_go = false;
     public GameObject clue;
     public TextMeshProUGUI scoreUI;
 
@@ -33,13 +34,14 @@ public class puzzle6_manager : MonoBehaviour
 
         if(torch1.GetComponent<puzzle6_torch>().is_on &&
             torch2.GetComponent<puzzle6_torch>().is_on &&
-            torch3.GetComponent<puzzle6_torch>().is_on){
+            torch3.GetComponent<puzzle6_torch>().is_on && !ready_to_go){
             key.SetActive(true);
             key.GetComponent<key>().is_collectable = true;
             gate.SetActive(true);
             PublicVars.score += 1;
             scoreUI.text = "Clues: " + PublicVars.score + "/8";
             clue.SetActive(true);
+            ready_to_go = true;
         }
     }
 }

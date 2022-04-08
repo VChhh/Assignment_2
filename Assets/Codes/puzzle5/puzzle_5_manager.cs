@@ -26,7 +26,7 @@ public class puzzle_5_manager : MonoBehaviour
 
     void Update()
     {
-        if(check_correctness()){
+        if(check_correctness() && !ready_to_go){
                 // do something
                 print("matched");
                 key.SetActive(true);
