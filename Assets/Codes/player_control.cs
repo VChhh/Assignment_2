@@ -12,7 +12,7 @@ public class player_control : MonoBehaviour
     public GameObject hint_UI;
 
     private void Start() {
-        scoreUI.text = "Clues: " + PublicVars.score;
+        scoreUI.text = "Clues: " + PublicVars.score + "/10";
         _navAgent = GetComponent<NavMeshAgent>();
         maincam = Camera.main;
         //StartCoroutine(Go());
@@ -37,9 +37,9 @@ public class player_control : MonoBehaviour
     }
 
     IEnumerator ShowMessage(string message, float delay) {
-        scoreUI.text = "Clues: " + PublicVars.score + message;
+        scoreUI.text = "Clues: " + PublicVars.score + "/10" + message;
         yield return new WaitForSeconds(delay);
-        scoreUI.text = "Clues: " + PublicVars.score;
+        scoreUI.text = "Clues: " + "/10" + PublicVars.score;
     }
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.CompareTag("Interactable")){
@@ -49,7 +49,7 @@ public class player_control : MonoBehaviour
         {
             Destroy(other.gameObject);
             // PublicVars.score++;
-            scoreUI.text = "Clues: " + PublicVars.score;
+            scoreUI.text = "Clues: " + PublicVars.score + "/10";
             if(PublicVars.score >= 0){
                 StartCoroutine(ShowMessage("  Hint: The Key is located in location XYZ", 3f));
             }
@@ -58,8 +58,8 @@ public class player_control : MonoBehaviour
 
         if(other.gameObject.CompareTag("Key")){
             Destroy(other.gameObject);
-            PublicVars.score++;
-            scoreUI.text = "Clues: " + PublicVars.score;
+            // PublicVars.score++;
+            // scoreUI.text = "Clues: " + PublicVars.score + "/10";
         }
     }
 

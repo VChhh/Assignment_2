@@ -27,9 +27,9 @@ public class grab : MonoBehaviour
     }
     
     IEnumerator ShowMessage(string message, float delay) {
-        scoreUI.text = "Hints Collected: " + PublicVars.score + message;
+        scoreUI.text = "Clues: " + PublicVars.score + "/10" + message;
         yield return new WaitForSeconds(delay);
-        scoreUI.text = "Hints Collected: " + PublicVars.score;
+        scoreUI.text = "Clues: " + PublicVars.score + "/10";
     }
     void grab_check(){
         RaycastHit grab_hit;
@@ -37,7 +37,7 @@ public class grab : MonoBehaviour
             if(grab_hit.transform.CompareTag("grab") || grab_hit.transform.CompareTag("Item")){
                 // do something
                 // PublicVars.score++;
-                scoreUI.text = "Score: " + PublicVars.score;
+                scoreUI.text = "Clues: " + PublicVars.score + "/10";
                 /*
                 if(PublicVars.score >= 0){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in the cabinet", 3f));
@@ -48,6 +48,9 @@ public class grab : MonoBehaviour
                 }
                 if(SceneManager.GetActiveScene().name == "test_scene"){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in cabinet", 3f));
+                }
+                if(SceneManager.GetActiveScene().name == "puzzle"){
+                    StartCoroutine(ShowMessage("  Hint: The button colors don't match the wall...", 3f));
                 }
             }            
         }
