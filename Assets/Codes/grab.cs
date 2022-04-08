@@ -57,7 +57,7 @@ public class grab : MonoBehaviour
                     StartCoroutine(ShowMessage("  Hint: Rotate...rotate...", 3f));
                 }
                 else if(SceneManager.GetActiveScene().name == "puzzle3"){
-                    StartCoroutine(ShowMessage("  Hint: Dodge 1,2,3,4,5!", 3f));
+                    StartCoroutine(ShowMessage("  Hint: Dodge 1,2,3,4,5,6!", 3f));
                 }
                 else if(SceneManager.GetActiveScene().name == "puzzle4"){
                     StartCoroutine(ShowMessage("  Hint: 0/2 keys", 3f));
