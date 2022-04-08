@@ -186,6 +186,8 @@ GameObject:
   - component: {fileID: 140810018}
   - component: {fileID: 140810017}
   - component: {fileID: 140810016}
+  - component: {fileID: 140810020}
+  - component: {fileID: 140810021}
   m_Layer: 0
   m_Name: puzzle piece (1)
   m_TagString: Jigsaw
@@ -204,8 +206,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 11.552286, z: 1}
+  m_Center: {x: -0, y: 5.5492163, z: 0}
 --- !u!23 &140810017
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -263,12 +265,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140810015}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.345358, y: -3.9481316, z: 1.5252094}
+  m_LocalPosition: {x: 2.345358, y: -3.92, z: 1.5252094}
   m_LocalScale: {x: 3, y: 0.2, z: 3}
   m_Children: []
   m_Father: {fileID: 1167783331}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &140810020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140810015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58661533846b2134487199115556285a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &140810021
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140810015}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &359209661 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5402165261545083165, guid: 146dfbc5ef89f614a99d963f231414b1, type: 3}
@@ -535,6 +565,8 @@ GameObject:
   - component: {fileID: 604740460}
   - component: {fileID: 604740459}
   - component: {fileID: 604740458}
+  - component: {fileID: 604740462}
+  - component: {fileID: 604740463}
   m_Layer: 0
   m_Name: puzzle piece
   m_TagString: Jigsaw
@@ -553,8 +585,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 7.957362, z: 1}
+  m_Center: {x: 0, y: 3.595696, z: 0}
 --- !u!23 &604740459
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -612,12 +644,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604740457}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.67464256, y: -3.9481316, z: 1.5252094}
+  m_LocalPosition: {x: -0.67464256, y: -3.93, z: 1.5252094}
   m_LocalScale: {x: 3, y: 0.2, z: 3}
   m_Children: []
   m_Father: {fileID: 1167783331}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &604740462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604740457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58661533846b2134487199115556285a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &604740463
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604740457}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &680028978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,6 +1226,8 @@ GameObject:
   - component: {fileID: 1059536123}
   - component: {fileID: 1059536122}
   - component: {fileID: 1059536121}
+  - component: {fileID: 1059536125}
+  - component: {fileID: 1059536126}
   m_Layer: 0
   m_Name: puzzle piece (2)
   m_TagString: Jigsaw
@@ -1184,8 +1246,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 11.178989, z: 1}
+  m_Center: {x: 0, y: 5.0199175, z: 0}
 --- !u!23 &1059536122
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1243,12 +1305,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059536120}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -0.67464256, y: -3.9481316, z: -1.5247917}
+  m_LocalPosition: {x: -0.67464256, y: -3.93, z: -1.5247917}
   m_LocalScale: {x: 3, y: 0.2, z: 3}
   m_Children: []
   m_Father: {fileID: 1167783331}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!114 &1059536125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059536120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58661533846b2134487199115556285a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1059536126
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059536120}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1167783330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1486,8 @@ GameObject:
   - component: {fileID: 1487921460}
   - component: {fileID: 1487921459}
   - component: {fileID: 1487921458}
+  - component: {fileID: 1487921462}
+  - component: {fileID: 1487921463}
   m_Layer: 0
   m_Name: puzzle piece (3)
   m_TagString: Jigsaw
@@ -1414,8 +1506,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 10.786815, z: 1}
+  m_Center: {x: 0, y: 5.048964, z: 0}
 --- !u!23 &1487921459
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1473,12 +1565,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487921457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.345358, y: -3.9481316, z: -1.5247917}
+  m_LocalPosition: {x: 2.345358, y: -3.91, z: -1.5247917}
   m_LocalScale: {x: 3, y: 0.2, z: 3}
   m_Children: []
   m_Father: {fileID: 1167783331}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1487921462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487921457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58661533846b2134487199115556285a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1487921463
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487921457}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1536936850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,7 +1614,6 @@ GameObject:
   - component: {fileID: 1536936852}
   - component: {fileID: 1536936851}
   - component: {fileID: 1536936857}
-  - component: {fileID: 1536936858}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1632,19 +1751,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maincam: {fileID: 963194227}
   scoreUI: {fileID: 539755036}
---- !u!114 &1536936858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536936850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58661533846b2134487199115556285a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maincam: {fileID: 963194227}
 --- !u!1 &1625268388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,7 +2087,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2112115865115491431, guid: 146dfbc5ef89f614a99d963f231414b1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2112115865115491431, guid: 146dfbc5ef89f614a99d963f231414b1, type: 3}
       propertyPath: m_LocalScale.x
