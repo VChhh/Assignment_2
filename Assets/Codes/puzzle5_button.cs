@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class puzzle_button : MonoBehaviour
+public class puzzle5_button : MonoBehaviour
 {
     public int index;
     private Renderer _rd;
@@ -16,11 +16,10 @@ public class puzzle_button : MonoBehaviour
     private void Update() {
         if(is_in && Input.GetKeyDown("f")){
 
-            index = (index + 1) % 3;
-
+            GameObject.FindGameObjectWithTag("Manager").GetComponent<puzzle_5_manager>().change_color(gameObject);
             soundManagerScript.playSound("clickButton");
 
-            _rd.material= _materials[index];
+            
         }
     }
 
@@ -33,5 +32,10 @@ public class puzzle_button : MonoBehaviour
         if(other.transform.CompareTag("Player")){
             is_in = false;
         }
+    }
+
+    public void change_color(){
+        index = (index + 1) % 3;
+        _rd.material= _materials[index];
     }
 }
