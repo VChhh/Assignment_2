@@ -16,10 +16,5 @@ public class LampLights : MonoBehaviour
             this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
-
-    public void TurnOn()
-    {
-        this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
-        PublicVars.houses_completed[houseNumber] = true;
-    }
+    
 }
