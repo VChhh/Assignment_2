@@ -37,6 +37,8 @@ public class player_control : MonoBehaviour
         yield return new WaitForSeconds(delay);
         scoreUI.text = "Clues: " + "/8" + PublicVars.score;
     }
+
+    /*
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.CompareTag("Interactable")){
             hint_UI.SetActive(true);
@@ -54,6 +56,7 @@ public class player_control : MonoBehaviour
             // scoreUI.text = "Clues: " + PublicVars.score + "/10";
         }
     }
+    */
 
 
     private void OnCollisionExit(Collision other) {
