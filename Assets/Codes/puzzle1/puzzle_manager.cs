@@ -38,6 +38,7 @@ public class puzzle_manager : MonoBehaviour
                 ready_to_go = true;
                 PublicVars.score += 1;
                 scoreUI.text = "Clues: " + PublicVars.score + "/10";
+                // PublicVars.houses_completed[houseNumber] = true;
         }
         if(ready_to_go){
             gate.SetActive(true);
