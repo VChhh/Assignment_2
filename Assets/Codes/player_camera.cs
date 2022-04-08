@@ -9,7 +9,7 @@ public class player_camera : MonoBehaviour
     GameObject player;
     Vector3 offset;
     float vertical_offset = 0f;
-    public float rotate_speed = .8f; // camera rotation speed
+    float rotate_speed = .8f; // camera rotation speed
 
     void Start()
     {
