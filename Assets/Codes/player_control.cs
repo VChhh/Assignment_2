@@ -15,7 +15,7 @@ public class player_control : MonoBehaviour
     Vector3 previous_position;
 
     private void Start() {
-        scoreUI.text = "Clues: " + PublicVars.score + "/10";
+        scoreUI.text = "Clues: " + PublicVars.score + "/8";
         _navAgent = GetComponent<NavMeshAgent>();
         maincam = Camera.main;
         _am = GetComponent<Animator>();
@@ -33,9 +33,9 @@ public class player_control : MonoBehaviour
     }
 
     IEnumerator ShowMessage(string message, float delay) {
-        scoreUI.text = "Clues: " + PublicVars.score + "/10" + message;
+        scoreUI.text = "Clues: " + PublicVars.score + "/8" + message;
         yield return new WaitForSeconds(delay);
-        scoreUI.text = "Clues: " + "/10" + PublicVars.score;
+        scoreUI.text = "Clues: " + "/8" + PublicVars.score;
     }
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.CompareTag("Interactable")){
@@ -45,7 +45,7 @@ public class player_control : MonoBehaviour
         {
             Destroy(other.gameObject);
             // PublicVars.score++;
-            scoreUI.text = "Clues: " + PublicVars.score + "/10";
+            scoreUI.text = "Clues: " + PublicVars.score + "/8";
         }
 
         if(other.gameObject.CompareTag("Key")){

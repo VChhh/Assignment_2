@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class puzzle6_manager : MonoBehaviour
 {
@@ -14,7 +15,10 @@ public class puzzle6_manager : MonoBehaviour
     public GameObject key;
     public GameObject gate;
 
-    //public GameObject clue;
+    public GameObject clue;
+    public TextMeshProUGUI scoreUI;
+
+
 
     private void Start() {
         PublicVars.keys_in_world = 1;
@@ -34,9 +38,8 @@ public class puzzle6_manager : MonoBehaviour
             key.GetComponent<key>().is_collectable = true;
             gate.SetActive(true);
             PublicVars.score += 1;
-
-            // scoreUI.text = "Clues: " + PublicVars.score + "/10";
-            // clue.SetActive(true);
+            scoreUI.text = "Clues: " + PublicVars.score + "/8";
+            clue.SetActive(true);
         }
     }
 }
