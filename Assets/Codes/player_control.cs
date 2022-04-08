@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using TMPro;
 using UnityEngine.Animations;
+using UnityEngine.SceneManagement;
 
 public class player_control : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class player_control : MonoBehaviour
             if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out hit, 200)){
                 _navAgent.destination = hit.point;
             }
+        }
+        if(Input.GetButtonDown("Cancel")){
+            SceneManager.LoadScene("title");
         }   
     }
 
