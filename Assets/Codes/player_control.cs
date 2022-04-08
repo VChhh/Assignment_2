@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using TMPro;
+using UnityEngine.Animations;
 
 public class player_control : MonoBehaviour
 {
@@ -10,24 +11,19 @@ public class player_control : MonoBehaviour
     public Camera maincam;
     public TextMeshProUGUI scoreUI;
     public GameObject hint_UI;
+    Animator _am;
+    Vector3 previous_position;
 
     private void Start() {
         scoreUI.text = "Clues: " + PublicVars.score;
         _navAgent = GetComponent<NavMeshAgent>();
         maincam = Camera.main;
-        //StartCoroutine(Go());
+        _am = GetComponent<Animator>();
+        previous_position = transform.position;
     }   
 
-    IEnumerator Go(){
-        while(true){
-            yield return new WaitForSeconds(1f);
-            Vector3 point = new Vector3(Random.Range(-2,2), 0, Random.Range(-2,2));
-            _navAgent.destination = point;
-        }
-    }
-
     private void Update() {
-        
+        _am.SetBool("is_moving", previous_position!=transform.position);
         if(Input.GetMouseButtonDown(0)){
             RaycastHit hit;
             if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out hit, 200)){
@@ -77,4 +73,7 @@ public class player_control : MonoBehaviour
         }
     }
 
+    private void LateUpdate() {
+        previous_position = transform.position;
+    }
 }
