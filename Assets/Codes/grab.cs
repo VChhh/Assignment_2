@@ -46,11 +46,14 @@ public class grab : MonoBehaviour
                 if(SceneManager.GetActiveScene().name == "house"){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in one of the boxes", 3f));
                 }
-                if(SceneManager.GetActiveScene().name == "test_scene"){
+                else if(SceneManager.GetActiveScene().name == "test_scene"){
                     StartCoroutine(ShowMessage("  Hint: The Key is located in cabinet", 3f));
                 }
-                if(SceneManager.GetActiveScene().name == "puzzle"){
+                else if(SceneManager.GetActiveScene().name == "puzzle"){
                     StartCoroutine(ShowMessage("  Hint: The button colors don't match the wall...", 3f));
+                }
+                else if(SceneManager.GetActiveScene().name == "puzzle2"){
+                    StartCoroutine(ShowMessage("  Hint: Rotate...rotate...", 3f));
                 }
             }            
         }
