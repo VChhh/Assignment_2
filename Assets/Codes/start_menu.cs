@@ -11,6 +11,10 @@ public class start_menu : MonoBehaviour
         SceneManager.LoadScene(PublicVars.scene);
     }
 
+    public void Instructions(){
+        Time.timeScale = 1;
+        SceneManager.LoadScene("instructions");
+    }
 
     public void ExitGame(){
         print("Quit Game!");
