@@ -53,6 +53,7 @@ public class puzzle_5_manager : MonoBehaviour
         for(int i = 0; i < 5; ++i){
             if(buttons[i] == curr) index = i;
         }
+        soundManagerScript.playSound("clickButton");
         buttons[index].GetComponent<puzzle5_button>().change_color();
         if(index + 1 < 5) buttons[index + 1].GetComponent<puzzle5_button>().change_color();
         if(index - 1 >= 0) buttons[index - 1].GetComponent<puzzle5_button>().change_color();
