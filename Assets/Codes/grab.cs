@@ -84,4 +84,5 @@ public class grab : MonoBehaviour
             PublicVars.keys_on_player ++ ;
             Destroy(grab_hit.transform.gameObject);
         }
+    }
 }
