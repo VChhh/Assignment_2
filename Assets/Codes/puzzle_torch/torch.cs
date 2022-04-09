@@ -27,6 +27,7 @@ public class torch : MonoBehaviour
 
     public void turn_on(){
         this.on.SetActive(true);
+        // soundManagerScript.playSound("lightFire");
         torch_manager.num_on++;
     }
 

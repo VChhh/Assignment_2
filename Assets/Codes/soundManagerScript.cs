@@ -11,6 +11,7 @@ public class soundManagerScript : MonoBehaviour
     public static AudioClip boxFall;
     public static AudioClip boxHit;
     public static AudioClip touch;
+    public static AudioClip lightFire;
 
     // public static AudioClip manholeSound;
     static AudioSource audioSrc;
@@ -23,6 +24,7 @@ public class soundManagerScript : MonoBehaviour
         boxFall = Resources.Load<AudioClip> ("boxFall");
         boxHit = Resources.Load<AudioClip> ("boxHit");
         touch = Resources.Load<AudioClip> ("touch");
+        lightFire = Resources.Load<AudioClip> ("lightFire");
         // cabinetOpen = Resources.Load<AudioClip> ("manholeSound");
         audioSrc = GetComponent<AudioSource> ();
     }
@@ -48,6 +50,9 @@ public class soundManagerScript : MonoBehaviour
         }
         else if (clip == "touch") {
             audioSrc.PlayOneShot(touch);
+        }
+        else if (clip == "lightFire") {
+            audioSrc.PlayOneShot(lightFire);
         }
         // else if (clip == "manholeSound") {
         //     audioSrc.PlayOneShot(manholeSound);
