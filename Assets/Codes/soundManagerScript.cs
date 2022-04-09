@@ -8,7 +8,8 @@ public class soundManagerScript : MonoBehaviour
     public static AudioClip clickButton;
     public static AudioClip cabinetOpen;
     public static AudioClip pickUp;
-    // public static AudioClip boxFall;
+    public static AudioClip boxFall;
+    public static AudioClip boxHit;
 
     // public static AudioClip manholeSound;
     static AudioSource audioSrc;
@@ -18,7 +19,8 @@ public class soundManagerScript : MonoBehaviour
         clickButton = Resources.Load<AudioClip> ("clickButton");
         cabinetOpen = Resources.Load<AudioClip> ("cabinetOpen");
         pickUp = Resources.Load<AudioClip> ("pickUp");
-        // boxFall = Resources.Load<AudioClip> ("boxFall");
+        boxFall = Resources.Load<AudioClip> ("boxFall");
+        boxHit = Resources.Load<AudioClip> ("boxHit");
         // cabinetOpen = Resources.Load<AudioClip> ("manholeSound");
         audioSrc = GetComponent<AudioSource> ();
     }
@@ -36,9 +38,12 @@ public class soundManagerScript : MonoBehaviour
         else if (clip == "pickUp") {
             audioSrc.PlayOneShot(pickUp);
         }
-        // else if (clip == "boxFall") {
-        //     audioSrc.PlayOneShot(boxFall);
-        // }
+        else if (clip == "boxFall") {
+            audioSrc.PlayOneShot(boxFall);
+        }
+        else if (clip == "boxHit") {
+            audioSrc.PlayOneShot(boxHit);
+        }
         // else if (clip == "manholeSound") {
         //     audioSrc.PlayOneShot(manholeSound);
         // }

@@ -33,12 +33,14 @@ public class drop_manager : MonoBehaviour
     }
 
     public void reset(){
+        soundManagerScript.playSound("boxHit");
         box_dropped = 0;
         drop_box.transform.position = initial_pos;
         drop_box.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 
     public void score(){
+        soundManagerScript.playSound("boxFall");
         box_dropped++;
         drop_box.transform.position = initial_pos-(new Vector3(0, box_dropped*difficulty_const, 0));
         if(box_dropped > 0){
