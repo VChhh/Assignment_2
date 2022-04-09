@@ -79,9 +79,10 @@ public class grab : MonoBehaviour
         // destroy the key and update the key num if the key is_collectable
         if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200, the_layer) 
             && grab_hit.transform.GetComponent<key>().is_collectable ){
-
+            soundManagerScript.playSound("pickUp");
             PublicVars.keys_in_world -- ;
             PublicVars.keys_on_player ++ ;
             Destroy(grab_hit.transform.gameObject);
         }
+    }
 }
