@@ -34,6 +34,7 @@ public class puzzle6_torch : MonoBehaviour
 
     void on(){
         is_on = true;
+        soundManagerScript.playSound("touch");
         _rd.material = target_color;
         StartCoroutine(wait(time));
     }
