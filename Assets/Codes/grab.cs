@@ -10,8 +10,6 @@ public class grab : MonoBehaviour
     public Camera maincam;
     private int the_layer;
 
-    Animator _an;
-
     
     public TextMeshProUGUI scoreUI;
 
@@ -19,7 +17,6 @@ public class grab : MonoBehaviour
     {
         maincam = Camera.main;
         the_layer = LayerMask.GetMask("key");
-        _an = GetComponent<Animator>();
     }
 
     void Update()
@@ -84,12 +81,15 @@ public class grab : MonoBehaviour
             && grab_hit.transform.GetComponent<key>().is_collectable 
             && Vector3.Distance(transform.position, grab_hit.transform.position) < 5){
             // soundManagerScript.playSound("pickUp");
+=======
+            && grab_hit.transform.GetComponent<key>().is_collectable){
+>>>>>>> parent of 47b959d (grab animation)
             PublicVars.keys_in_world -- ;
             PublicVars.keys_on_player ++ ;
-            StartCoroutine(wait_and_destory(grab_hit.transform.gameObject));
+            Destroy(grab_hit.transform.gameObject);
         }
-    }
 
+<<<<<<< HEAD
     IEnumerator wait_and_destory(GameObject g){
         _an.SetBool("grabbing", true);
         soundManagerScript.playSound("pickUp");
