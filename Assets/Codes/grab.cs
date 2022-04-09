@@ -83,6 +83,7 @@ public class grab : MonoBehaviour
         if(Physics.Raycast(maincam.ScreenPointToRay(Input.mousePosition), out grab_hit, 200, the_layer) 
             && grab_hit.transform.GetComponent<key>().is_collectable 
             && Vector3.Distance(transform.position, grab_hit.transform.position) < 5){
+            // soundManagerScript.playSound("pickUp");
             PublicVars.keys_in_world -- ;
             PublicVars.keys_on_player ++ ;
             StartCoroutine(wait_and_destory(grab_hit.transform.gameObject));
@@ -91,7 +92,9 @@ public class grab : MonoBehaviour
 
     IEnumerator wait_and_destory(GameObject g){
         _an.SetBool("grabbing", true);
+        soundManagerScript.playSound("pickUp");
         yield return new WaitForSeconds(1f);
+        // soundManagerScript.playSound("pickUp");
         Destroy(g);
     }
 }
